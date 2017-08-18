@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bdqn</groupId>
+  <groupId>maven</groupId>
   <artifactId>DataCockpit</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>dt32_maven_ssm1 Maven Webapp</name>
+  <name>DataCockpit Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
   <properties>
@@ -14,11 +14,6 @@
 		
 		<spring.version>3.2.2.RELEASE</spring.version>
 		<jackson.version>2.1.4</jackson.version>
-		 <maven.compiler.source>1.7</maven.compiler.source>
-
-        <maven.compiler.target>1.7</maven.compiler.target>
-
-        <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
 	</properties>
   
   <dependencies>
@@ -227,7 +222,7 @@
 		</dependency>-->
 		
 		<dependency>
-			<groupId>javax.servlet</groupId>
+			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
