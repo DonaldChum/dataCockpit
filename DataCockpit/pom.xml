@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>cn.bdql.dt36</groupId>
-  <artifactId>dt32_maven_ssm1</artifactId>
+  <groupId>com.bdqn</groupId>
+  <artifactId>DataCockpit</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>dt32_maven_ssm1 Maven Webapp</name>
@@ -247,6 +247,6 @@
 	</dependencies>
   
   <build>
-    <finalName>dt32_maven_ssm1</finalName>
+    <finalName>DataCockpit</finalName>
   </build>
 </project>
