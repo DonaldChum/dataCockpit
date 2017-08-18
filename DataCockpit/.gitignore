@@ -1,5 +1,5 @@
 /target/
-.settings.xml
 .project
 .classpath
-.target
+/.settings/
+/workspace/
