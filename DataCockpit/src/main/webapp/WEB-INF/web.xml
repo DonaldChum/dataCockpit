@@ -41,5 +41,24 @@
 		<!-- "/"表示默认所有的请求都通过servlet映射，如"*.html"表示拦截所有以html为扩展名的请求 -->
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+	
+	<!-- 加载shiro相关配置 -->
+	<listener>
+    <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+	</listener>
+	
+	<filter>
+	    <filter-name>ShiroFilter</filter-name>
+	    <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	    <filter-name>ShiroFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	    <dispatcher>REQUEST</dispatcher>
+	    <dispatcher>FORWARD</dispatcher>
+	    <dispatcher>INCLUDE</dispatcher>
+	    <dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+	
 </web-app>

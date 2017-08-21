@@ -12,9 +12,17 @@
     <result column="state" property="state" jdbcType="INTEGER" />
     <result column="approval" property="approval" jdbcType="INTEGER" />
   </resultMap>
+  
   <sql id="Base_Column_List" >
     id, corpName, phone, name, job, password, email, state, approval
   </sql>
+  
+   <select id="selectAllCompanies" resultType="Map">
+    select 
+    <include refid="Base_Column_List" />
+    from companyinfo
+  </select>
+  
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />

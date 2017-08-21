@@ -1,8 +1,13 @@
 package mapper;
 
+import java.util.List;
+
 import entity.Companyinfo;
 
 public interface CompanyinfoMapper {
+	
+	List<Companyinfo> selectAllCompanies();
+	
     int deleteByPrimaryKey(Integer id);
 
     int insert(Companyinfo record);

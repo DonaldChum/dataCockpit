@@ -1,22 +1,28 @@
 package entity;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
 public class Companyinfo {
+    
     private Integer id;
-
+    @NotNull
     private String corpname;
-
+    @NotNull
+    @Pattern(regexp="^(13|15|17|18)[0-9]{9}$",message="请输入有效手机号")
     private String phone;
-
+    @NotNull
     private String name;
-
+    @NotNull
     private String job;
-
+    @NotNull
+    @Pattern(regexp="[a-zA-Z0-9]{8,12}",message="密码必须为8-12位数字与字母组合")
     private String password;
-
+    @NotNull
     private String email;
-
+    @NotNull
     private Integer state;
-
+    @NotNull
     private Integer approval;
 
     public Integer getId() {
